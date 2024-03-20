@@ -1,0 +1,151 @@
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --card-bg: hsl(215, 27%, 12%);
+  --circle-color: hsl(210, 19%, 18%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Overpass", sans-serif;
+  color: var(--medium-grey);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--very-dark-blue);
+}
+p {
+  font-size: 1.5rem;
+}
+h1,
+h2 {
+  color: var(--white);
+}
+.card {
+  background-color: var(--card-bg);
+  max-width: 35rem;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  padding: 2rem;
+}
+.star {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--circle-color);
+  border-radius: 50%;
+}
+.star img {
+  width: 1.5rem;
+}
+.main-container h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 2rem 0;
+}
+.main-container p {
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+ul li {
+  list-style-type: none;
+}
+.rating ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  margin: 3rem 0;
+}
+
+.btn-rating {
+  background-color: var(--circle-color);
+  border: none;
+  outline: 0;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  color: var(--light-grey);
+}
+.btn-rating:hover {
+  background-color: var(--orange);
+  color: var(--white);
+  cursor: pointer;
+}
+.btn-rating:focus {
+  background-color: var(--light-grey);
+  color: var(--white);
+}
+.btn {
+  background-color: var(--orange);
+  color: var(--white);
+  font-family: inherit;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 3rem;
+  margin-bottom: 2rem;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--white);
+  color: var(--orange);
+}
+.thanks-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image img {
+  width: 15rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.result {
+  background-color: var(--circle-color);
+  color: var(--orange);
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 3rem;
+  margin-bottom: 3rem;
+}
+.thanks-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.thanks-container p {
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
+@media screen and (min-width: 76rem) {
+  .card {
+    border-radius: 3rem;
+  }
+}
